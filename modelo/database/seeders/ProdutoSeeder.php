@@ -17,5 +17,17 @@ class ProdutoSeeder extends Seeder
             'quantidade' => 2,
             'preco' => 5.00
         ]);
+
+        DB::table('produtos')->insert([
+            'nome' => 'Salgadinho',
+            'quantidade' => 3,
+            'preco' => 12.00
+        ]);
+
+        DB::table('produtos')->insert([
+            'nome' => 'Sorvete',
+            'quantidade' => 2,
+            'preco' => 8.00
+        ]);
     }
 }
