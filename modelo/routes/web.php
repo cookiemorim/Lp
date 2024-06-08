@@ -8,6 +8,7 @@ Route::get('/produtos', function () {
 });
 
 Route::get('/produtos', [ProdutoController::class, 'index'])->name('produto.index');
+Route::post('/cadastrarProduto', [ProdutoController::class, 'store'])->name('produto.store');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -28,7 +28,8 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Produto::create($request->all());
+        return redirect()->route ('mostraProduto')->with('sucsess', 'Produto cadastro com sucesso');
     }
 
     /**
@@ -36,7 +37,8 @@ class ProdutoController extends Controller
      */
     public function show(produto $produto)
     {
-        
+        $mostra=$produto->categoria;
+        $categoria=$produto->categoria;
     }
 
     /**
