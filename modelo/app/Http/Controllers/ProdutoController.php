@@ -15,12 +15,12 @@ class ProdutoController extends Controller
         return view ('layouts.Produto');
     }
 
-    /**
+    /** 
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        //
+        
     }
 
     /**
